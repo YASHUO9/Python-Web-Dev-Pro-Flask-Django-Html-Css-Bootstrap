@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--Display: -->
+
+<!--The display property is used to set the display of the element. -->
+
+<!--There are 5 types of display in CSS: -->
+<!--1. inline -->
+<!--2. block -->
+<!--3. inline-block -->
+<!--4. none -->
+<!--5. flex -->
+
+<!--1. inline: -->
+<!--The element is displayed as an inline element. -->
+<!--The width and height properties have no effect. -->
+<!--The top, right, bottom, left, and z-index properties have no effect. -->
+
+<!--2. block: -->
+<!--The element is displayed as a block-level element. -->
+<!--The width and height properties have effect. -->
+<!--The top, right, bottom, left, and z-index properties have effect. -->
+
+<!--3. inline-block: -->
+<!--The element is displayed as an inline-level block container. -->
+<!--The width and height properties have effect. -->
+<!--The top, right, bottom, left, and z-index properties have effect. -->
+
+<!--4. none: -->
+<!--The element is hidden. -->
+<!--The width and height properties have no effect. -->
+<!--The top, right, bottom, left, and z-index properties have no effect. -->
+
+<!--5. flex: -->
+<!--The element is displayed as a block-level flex container. -->
+<!--The width and height properties have effect. -->
+<!--The top, right, bottom, left, and z-index properties have effect. -->
+
+<!--The width and height properties are used to set the width and height of the element. -->
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        display:inline;
+    }
+    h2{
+        display:block;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    h3{
+        display:inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: green;
+    }
+    h4{
+        display:none;
+    }
+    h5{
+        display:flex;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+    body{
+        /* background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); */
+        background-image: url('https://www.w3schools.com/cssref/paper.gif');
+        max-width: 100%;
+    }
+</style>
+
+    <body>
+    <h1>Inline</h1>
+    <h2>Block</h2>
+    <h3>Inline-block</h3>
+    <h4>None</h4>
+    <h5>Flex</h5>
+    
+</body>
+</html>
