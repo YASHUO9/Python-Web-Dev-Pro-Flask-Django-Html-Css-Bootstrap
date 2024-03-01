@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--Droup down-->
+<!--The drop down is used to create a drop down list.-->
+<!--The ul tag is used to create an unordered list.-->
+<!--The display property is used to set the display of the list.-->
+<!--The list-style-type property is used to set the style of the list.-->
+<!--The margin property is used to set the margin of the list.-->
+<!--The padding property is used to set the padding of the list.-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .dropdown1{
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color:None;
+        min-width: 160px;
+        padding: auto;
+        z-index: 1;
+  
+    }
+    .dropdown:hover .dropdown-content{
+        display: block
+    }
+</style>
+<body>
+    <div class="dropdown1">
+     <span>
+            <button>Dropdown</button>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+     </span>
+    </div>
+    <div class="dropdown">
+     <span>
+        Hover over me
+     </span>
+     <div class="dropdown-content">
+        <p>hello world!</p>
+        <p>Yash Pathak</p>
+        <p>Yash Pathak</p>
+     </div>
+    </div>
+</body>
+</html>
