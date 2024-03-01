@@ -19,3 +19,12 @@
 ## 2. Intro to CSS:
 - CSS Basics and Comments
 - CSS color
+- CSS background color
+- CSS Box Model
+- CSS Outline,text,fonts
+- CSS Links,List,Tables
+- CSS position
+- CSS Display
+- CSS Nav Bar
+- CSS Drop Down
+- CSS Height,Width
