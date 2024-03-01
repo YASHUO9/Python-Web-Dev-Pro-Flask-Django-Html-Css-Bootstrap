@@ -14,7 +14,9 @@
 - List In HTML
 - Tables In HTML
 - Forms In HTML
-- HTML Milestone (Resume)
+- #### HTML Milestone (Resume)
+
+<img src = "Intro to HTML with mini Project\12.HTML Milestone Project\Resume2.jpg">
 
 ## 2. Intro to CSS:
 - CSS Basics and Comments
@@ -28,3 +30,13 @@
 - CSS Nav Bar
 - CSS Drop Down
 - CSS Height,Width
+- CSS Float
+- CSS OverFlow
+- CSS Icons
+- CSS Image
+- CSS Form
+- #### Milestone Project(Resume)
+ 
+<img src = "Intro to CSS\17.Milestone Project\Resume1.jpg">
+
+
