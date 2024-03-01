@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--Overflow:-->
+<!--The overflow property specifies what should happen if content overflows an element's box.-->
+<!--This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.-->
+<!--The overflow property has the following values:-->
+<!--visible - Default. The overflow is not clipped. It renders outside the element's box.-->
+<!--hidden - The overflow is clipped, and the rest of the content will be invisible.-->
+<!--scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content.-->
+<!--auto - Similar to scroll, but it adds scrollbars only when necessary.-->
+<!--The following example shows a div with a specified height, that hides any overflowed content:-->
+<!--The overflow property can also be used to control how content is rendered in an area that is too small to contain it.-->
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width: 200px;
+        height: 65px;
+        background-color: lightblue;
+        overflow: scroll;
+        /* overflow: hidden ; */
+        color: red;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+</style>
+<body>
+    <div >You can use the overflow property when you want to have better control
+        over the layout. The overflow property specifies what should happen if content
+        overflows an element's box. This property specifies whether to clip content or to add
+        scrollbars when an element's content is too big to fit in a specified area.
+    </div>
+</body>
+</html>
