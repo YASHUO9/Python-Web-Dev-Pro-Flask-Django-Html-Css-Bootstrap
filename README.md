@@ -39,4 +39,13 @@
  
 <img src = "Intro to CSS\17.Milestone Project\Resume1.jpg">
 
+## 3. Intro to Boostrap:
+<img src = "https://th.bing.com/th/id/R.1ff65f01a90017cdc987f1ce93072c02?rik=0wFPxnUdZnJDfw&riu=http%3a%2f%2fhtml5videoformatconverter.com%2fposts%2fdata%2fupload%2f2017%2f11%2ffreebstemplate.png&ehk=wAwFWpSV8%2fzNcH4s5gzHQlNbjkPF3yUCKbL%2fzYbZQnk%3d&risl=&pid=ImgRaw&r=0">  
 
+- Bootstrap is a popular front-end framework for building responsive and mobile-first websites and web 
+  applications. It provides a collection of pre-designed HTML, CSS, and JavaScript components that can be 
+  easily customized and integrated into your projects. With Bootstrap, you can quickly create visually 
+  appealing and consistent layouts across different devices and screen sizes. It simplifies the development 
+  process by offering ready-to-use components like buttons, forms, navigation bars, and grids, saving you 
+  time and effort. Whether you're a beginner or an experienced developer, Bootstrap offers a powerful 
+  toolkit to enhance your web development workflow.
