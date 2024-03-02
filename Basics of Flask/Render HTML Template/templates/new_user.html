@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Interface with Flask</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("data:image/jpeg;base64,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"); /* Adjust the path to your image */
+      background-size: cover;
+      background-position: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8); /* Add opacity to make text readable */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive Interface</h1>
+    <form action="/greet" method="POST">
+      <input type="text" name="name" placeholder="Enter your name">
+      <button type="submit">Greet</button>
+    </form>
+    <p>{{ greeting }}</p>
+  </div>
+</body>
+</html>
