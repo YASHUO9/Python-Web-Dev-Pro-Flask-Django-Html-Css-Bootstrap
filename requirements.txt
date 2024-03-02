@@ -1,3 +1,4 @@
 django
 datetime
 flask
+Flask-SQLAlchemy
