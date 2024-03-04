@@ -101,3 +101,12 @@ Flask Example with Bootstrap:
 ### 1. Todo List App:
 - Delete
 - Update
+
+### 2. CCTV-Live:
+- Image view using web camera.
+
+- Front/Homepage:
+<img src = "Mini Project\CCTV-Live\img.jpg">
+- Main Page:
+<img src = "Mini Project\CCTV-Live\img1.jpg">
+
