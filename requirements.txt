@@ -2,3 +2,4 @@ django
 datetime
 flask
 Flask-SQLAlchemy
+opencv-python
