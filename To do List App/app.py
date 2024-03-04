@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,request,redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime as dt
 
@@ -34,11 +34,42 @@ class TodoList(db.Model):
 #<-----------------------------------To do List App------------------------------------->
 
 
-@app.route('/')
+@app.route('/',methods=['GET','POST'])
 def index():
+    if request.method == 'POST':
+        title = request.form['title']
+        desc = request.form['desc']
+        todo = TodoList(title=title,desc=desc)
+        db.session.add(todo)
+        db.session.commit()
+    
     
     allTodo = TodoList.query.all()
     return render_template('index.html',alltodo=allTodo)
+
+
+@app.route('/delete/<int:sno>')
+def delete(sno):
+    todo = TodoList.query.filter_by(sno=sno).first()
+    db.session.delete(todo)
+    db.session.commit()
+    return redirect('/')
+    
+
+@app.route('/update/<int:sno>',methods=['GET','POST'])
+def update(sno):
+    if request.method == 'POST':
+        title = request.form['title']
+        desc = request.form['desc']
+        todo = TodoList.query.filter_by(sno=sno).first()
+        todo.title = title
+        todo.desc = desc
+        db.session.add(todo)
+        db.session.commit()
+        return redirect('/')
+    todo = TodoList.query.filter_by(sno=sno).first()
+    return render_template('update.html',todo=todo)
+
 
 
 
