@@ -96,4 +96,8 @@ Flask Example with Bootstrap:
 
 ## Mini Project:
 
-#### 1.Todo List App:
+<img src = "To do List App\img1.jpg">
+
+### 1.Todo List App:
+- Delete
+- Update
