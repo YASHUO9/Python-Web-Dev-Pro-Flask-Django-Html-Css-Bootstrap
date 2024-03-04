@@ -1,0 +1,29 @@
+<!-- 
+    This is the HTML template for the index page of the Flask Meme Website.
+    It displays a meme image, along with the current subreddit and a refresh timer.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>MEME website</title>
+     <meta name="description" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- Add the CSS file link here -->
+</head>
+<body>
+    <h1> A website to get meme using flask</h1>
+    <p>Meme will refresh in 30 seconds</p>
+    <p>
+        <!-- Display the meme image -->
+        {% if meme %}
+            <img src="{{ meme }}" alt="meme">
+        {% else %}
+            <img src="default_image.jpg" alt="default image">
+        {% endif %}
+    </p>
+    <p>Current subreddit : {{ subreddit }}</p>
+</body>
+</html>

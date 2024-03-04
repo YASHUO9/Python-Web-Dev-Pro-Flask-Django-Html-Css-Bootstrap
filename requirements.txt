@@ -3,3 +3,4 @@ datetime
 flask
 Flask-SQLAlchemy
 opencv-python
+requests
