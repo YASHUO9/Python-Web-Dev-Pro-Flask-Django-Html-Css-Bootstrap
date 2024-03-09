@@ -111,5 +111,22 @@ Flask Example with Bootstrap:
 <img src = "Mini Project\CCTV-Live\img1.jpg">
 
 ### 3. Flask Meme Website
-- 
+- #### Flask Meme Fetcher
 
+This repository contains a Flask application designed to fetch random memes from an API and display them on a webpage. It serves as a basic example of integrating Flask with external APIs and rendering dynamic content on a website.
+
+## Components
+
+- **Flask App**: The main application is built using Flask, a lightweight web framework for Python.
+- **Meme Fetching Function**: The `get_memes()` function fetches random memes from the "https://meme-api.com/gimme" API endpoint using the `requests` module. It parses the JSON response and extracts the meme URL and subreddit.
+- **Route Definition**: The `/` route in the Flask app is defined to render the `index.html` template. This template displays the fetched meme along with its subreddit if available.
+
+## Usage
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/flask-meme-Website.git
+   ```
+   
+ <img src = "Mini Project\Flask Meme Website\templates\images.jpg">   
