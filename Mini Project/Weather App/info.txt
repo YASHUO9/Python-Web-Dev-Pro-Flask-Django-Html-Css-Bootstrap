@@ -1,0 +1,3 @@
+django-admin startproject weatherapp
+python manage.py runserver
+python manage.py startapp weather
