@@ -137,6 +137,9 @@ This repository contains a Flask application designed to fetch random memes from
 
 <img src = "Mini Project\First Django Project\firstproject\passgen\templates\Screenshot 2024-03-09 180017.jpg">   
 
+### 5. Weather app:
+
+### 6.Blog:
 
 
 
