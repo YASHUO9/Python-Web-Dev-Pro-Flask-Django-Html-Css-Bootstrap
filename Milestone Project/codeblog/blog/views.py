@@ -1,10 +1,10 @@
 from django.shortcuts import render, HttpResponse
 
 # Create your views here.
-def home(request):
-    return HttpResponse("Hello, Django!")
+def blogpost(request,slug):
+    return render(request, 'blog/blogpost.html')
 
 
-def blog(request):
-    return HttpResponse("This is the blog page.")   
+def bloghome(request):
+    return render(request, 'blog/bloghome.html')
 
