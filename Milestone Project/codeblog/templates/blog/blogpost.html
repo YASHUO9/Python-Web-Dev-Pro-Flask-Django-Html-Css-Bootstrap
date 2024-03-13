@@ -7,5 +7,17 @@
 Blog post
     
 {% endblock %}
-{% block blogpostactive %}   active          
-              {% endblock %}
+{% block blogpostactive %}
+active          
+{% endblock %}
+
+{% block content %}
+{% comment %} {% load static %}
+{% import 'blog/templatetags/blog_tags.py' as blog_tags %} // Add this line {% endcomment %}
+
+<article class="container">
+   <h2>{{ post.title }}</h2>
+   <p class="blog-post-meta">{{ post.timeStamp }} by <a href="#">{{ post.author }}</a> </p>
+   <p>{{ post.content }}</p>
+</article>
+{% endblock %}
