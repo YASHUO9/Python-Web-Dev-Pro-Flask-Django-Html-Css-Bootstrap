@@ -1,0 +1,34 @@
+{% extends "home/base.html" %}
+{% block title %}
+ Search Results
+{% endblock %}
+
+{% block name %}
+  Search Results
+{% endblock %}
+
+{% block blog %}   active          
+{% endblock %}
+{% block home %}
+    
+{% endblock %}
+{% block blogactive %}   active          
+{% endblock %}
+
+
+
+{% block content %}
+{% for post in allpost %}
+<div class="container my-3">
+    <h2>Results are :</h2>
+<div class="card">
+  {% comment %} <img src=".." class="card-img-top" alt="..."> {% endcomment %}
+  <div class="card-body">
+    <h5 class="card-title">Blog by -{{ post.author }}</h5>
+    <h5 class="card-title">{{ post.title }}</h5>
+    <p class="card-text">{{ post.content | truncatechars:100 }}</p>
+    <a href="/blogpost" class="btn btn-primary">Read more</a>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
